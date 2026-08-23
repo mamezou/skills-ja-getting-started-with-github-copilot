@@ -1,39 +1,39 @@
-## Step 4: Plan your implementation with the Planning Agent 🧭
+## Step 4: Planning Agent で実装を計画する 🧭
 
-In the last step, Agent Mode helped us move fast and ship new functionality. 🚀
+前の Step では、Agent Mode のおかげで速く動き、新しい機能を出せました。 🚀
 
-Now let's slow down for one round and work like architects: define a strong testing approach first, then hand it off for implementation. This gives us better clarity, fewer surprises, and cleaner results. 🧪
+今度は 1 回だけ速度を落として、設計者のように進めます。まずしっかりしたテスト方針を決めてから、実装に渡します。計画を先に立てると見通しがよくなり、想定外が減り、結果もきれいになります。 🧪
 
-### 📖 Theory: What is Copilot Plan Agent?
+### 📖 理論: Copilot Plan Agent とは
 
-Copilot [Plan Agent](https://code.visualstudio.com/docs/copilot/agents/planning) helps you design a solution before any code is changed.
+Copilot の [Plan Agent](https://code.visualstudio.com/docs/copilot/agents/planning) は、コードを変更する前に解決策を設計する手助けをします。
 
-Instead of jumping straight into edits, it researches your request, asks clarifying questions, and drafts an implementation plan you can refine.
+いきなり編集を始めるのではなく、依頼内容を調べ、確認の質問をし、練り直せる実装計画を書き出します。
 
-#### Plan Agent (at a glance)
+#### Plan Agent の要点
 
-| Aspect | 🧭 Plan Agent |
+| 観点 | 🧭 Plan Agent |
 | --- | --- |
-| Purpose | Creates a structured implementation plan before coding starts. |
-| Context gathering | Uses read-only research to understand requirements and constraints. |
-| Collaboration style | Asks clarifying questions, then updates the plan using your answers. |
-| Iteration | Supports multiple refinement passes before implementation. |
-| Safety | Does not edit files until you approve the plan and hand off to **Agent Mode**. |
-| Handoff | **Start implementation** button hands off the approved plan to **Agent Mode** for coding. |
+| 目的 | コーディングを始める前に、構造化された実装計画を作ります。 |
+| コンテキストの収集 | 読み取り専用の調査で、要件と制約を理解します。 |
+| 進め方 | 確認の質問をし、答えを使って計画を更新します。 |
+| 繰り返し | 実装前に何度でも計画を練り直せます。 |
+| 安全性 | 計画を承認して **Agent Mode** に引き渡すまで、ファイルを編集しません。 |
+| 引き渡し | **Start implementation** ボタンで、承認した計画を **Agent Mode** に渡してコーディングを始めます。 |
 
 > [!TIP]
-> You can start from a high-level request and then add constraints and details in follow-up prompts.
+> 大まかな依頼から始めて、後続のプロンプトで制約や詳細を足していけます。
 
-### ⌨️ Activity: Plan and implement backend tests
+### ⌨️ やること: バックエンドのテストを計画して実装する
 
-Your backend still has zero test coverage. Use **Plan Agent** to create a plan, answer questions, and then launch implementation.
+バックエンドにはまだテストがまったくありません。**Plan Agent** で計画を作り、質問に答えて、実装を開始しましょう。
 
-1. Open the **Copilot Chat** panel and switch to **Plan Agent**.
+1. **Copilot Chat** パネルを開き、**Plan Agent** に切り替えます。
 
    <img width="350" alt="image" src="../images/plan-mode-dropdown.png" />
 
 
-1. Let's start with a broad prompt and Copilot will help us fill in the details:
+1. まずは大まかなプロンプトから始めます。細かいところは Copilot が埋めるのを手伝ってくれます。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -41,13 +41,13 @@ Your backend still has zero test coverage. Use **Plan Agent** to create a plan, 
    > Let's plan for adding backend FastAPI tests in a separate tests directory.
    > ```
 
-1. Wait for Copilot to generate its first plan. If it asks you any questions, answer them to the best of your ability. 
+1. Copilot が最初の計画を作るまで待ちます。質問されたら、できる範囲で答えてください。 
 
-   > 🪧 **Note:** Don't worry about getting it perfect, you can always refine the plan later.
+   > 🪧 **注:** 完璧を目指さなくて構いません。計画は後から練り直せます。
 
-1. You can refine the plan and provide additional details in follow up prompts
+1. 後続のプロンプトで、計画を練り直したり詳細を足したりできます。
 
-   Here are some examples:
+   例を示します。
 
    > ![Static Badge](https://img.shields.io/badge/-Prompt-text?style=social&logo=github%20copilot)
    >
@@ -62,28 +62,28 @@ Your backend still has zero test coverage. Use **Plan Agent** to create a plan, 
    > ```
 
 
-1. Review the proposed plan and when you are happy with it, click **Start implementation** to hand off to **Agent Mode**.
+1. 提案された計画を確認し、納得できたら **Start implementation** をクリックして **Agent Mode** に引き渡します。
 
    <img width="350" alt="image" src="../images/plan-mode-start-implementation.png" />
 
-   Notice that clicking the button switched from **Plan** to **Agent Mode**. From this point on, Copilot can edit your codebase, just like before.
+   ボタンを押すと **Plan** から **Agent Mode** に切り替わったことに注目してください。切り替わったあとは、前の Step と同じように Copilot がコードベースを編集できます。
 
-1. Watch Copilot implement the plan you just created. It may ask for permissions to run certain tools (e.g., run commands or create virtual environments). Approve these permissions so it can continue working.
+1. 作った計画を Copilot が実装していく様子を見ます。ツールの実行（コマンドの実行や仮想環境の作成など）の許可を求められることがあります。作業を続けられるよう承認してください。
 
-1. Review the changes and make sure tests run successfully. If needed, continue guiding until implementation is complete.
+1. 変更を確認し、テストが正常に実行されることを確かめます。必要なら、実装が終わるまで指示を続けてください。
 
-   **🎯 Goal: Get all tests passing (green) before you move on. ✅**
+   **🎯 目標: 先へ進む前に、すべてのテストを通す（緑にする）こと。 ✅**
 
-   > 🪧 **Note:** Agent Mode may complete this in one pass, or it may need follow-up prompts from you.
+   > 🪧 **注:** Agent Mode は 1 回で終えることもあれば、追加のプロンプトが必要なこともあります。
 
-1. **Commit** and **push** all your changes to the `accelerate-with-copilot` branch.
+1. すべての変更を `accelerate-with-copilot` ブランチに **Commit** して **push** します。
 
-1. Wait for Mona to check your work and share the next step.
+1. Mona が作業を確認しています。少し待って、コメントを見てください。進捗と次の Step が投稿されます。
 
 <details>
-<summary>Having trouble? 🤷</summary><br/>
+<summary>うまくいかないとき 🤷</summary><br/>
 
-- If tests did not run, ask Copilot to run them for you.
-- Make sure `pytest` is added in `requirements.txt` and a `tests/` directory exists.
+- テストが実行されなかった場合は、実行するよう Copilot に頼んでください。
+- `requirements.txt` に `pytest` が追加され、`tests/` ディレクトリがあることを確認してください。
 
 </details>
