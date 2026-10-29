@@ -20,3 +20,5 @@ _おめでとうございます。演習を終え、GitHub Copilot について�
   - [Customize your GitHub Copilot Experience](https://github.com/skills/customize-your-github-copilot-experience) で、Copilot をプロジェクトに合わせて調整する
   - [Modernize Your Legacy Code with GitHub Copilot](https://github.com/skills/modernize-your-legacy-code-with-github-copilot) で、レガシーな COBOL コードに取り組む
   - [Expand your team with Copilot](https://github.com/skills/expand-your-team-with-copilot) で、GitHub Copilot Coding Agent を試す
+  - [Idea to Merge with the Copilot App](https://github.com/skills/idea-to-merge-with-the-copilot-app) で、GitHub Copilot app を試す
+  - [Create applications with the Copilot CLI](https://github.com/skills/create-applications-with-the-copilot-CLI) で、GitHub Copilot CLI を試す
