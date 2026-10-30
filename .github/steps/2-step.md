@@ -20,7 +20,7 @@
 - **プロンプトはどう書く？:** はっきりと具体的に書くほど、Copilot はよい仕事をします。ただし従来の仕組みと違って、後から追加のプロンプトで指示を補うことができます。
 
 > [!TIP]
-> Copilot の知識と能力を補う方法は他にもあります。[chat participants](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants)、[chat variables](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables)、[slash commands](https://docs.github.com/en/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1)、[MCP tools](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) などです。
+> Copilot の知識と能力を補う方法は他にもあります。[chat participants](https://docs.github.com/ja/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-participants)、[chat variables](https://docs.github.com/ja/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#chat-variables)、[slash commands](https://docs.github.com/ja/copilot/using-github-copilot/copilot-chat/github-copilot-chat-cheat-sheet?tool=vscode#slash-commands-1)、[MCP tools](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) などです。
 
 ### :keyboard: やること: Copilot で申し込みのバグを直す :bug:
 

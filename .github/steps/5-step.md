@@ -13,7 +13,7 @@
 作業は多くの目で見てもらうほどよいので、通常のピアレビューの前に、Copilot に一度見てもらいましょう。Copilot は、簡単な調整で直せるよくある間違いを見つけるのが得意です。ただし、責任を持って使うことを忘れないでください。
 
 > [!NOTE]
-> 2 つの機能は **GitHub Copilot** の有料プランでのみ使えます。[[docs]](https://docs.github.com/en/copilot/get-started/plans)
+> 2 つの機能は **GitHub Copilot** の有料プランでのみ使えます。[[docs]](https://docs.github.com/ja/copilot/get-started/plans)
 
 ### :keyboard: やること: Copilot で PR を要約してレビューする
 

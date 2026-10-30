@@ -29,7 +29,7 @@ IDE で作業するとき、GitHub Copilot とは主に次の形でやり取り�
 ただし今日のコーディングでは、[GitHub Codespace](https://github.com/features/codespaces) という設定済みの開発環境の中で VS Code を使って練習します。
 
 > [!TIP]
-> 現在の機能と今後の機能については、[GitHub Copilot Features](https://docs.github.com/en/copilot/about-github-copilot/github-copilot-features) のドキュメントで学べます。
+> 現在の機能と今後の機能については、[GitHub Copilot Features](https://docs.github.com/ja/copilot/about-github-copilot/github-copilot-features) のドキュメントで学べます。
 
 ### :keyboard: やること: Copilot Chat にプロジェクトを紹介してもらう
 
